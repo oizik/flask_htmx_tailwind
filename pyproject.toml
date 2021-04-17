@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "flask-htmx-tailwind"
+version = "0.1.0"
+description = ""
+authors = ["Gary Jarrel <gary@jarrel.com.au>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Flask = "^1.1.2"
+Flask-Assets = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
