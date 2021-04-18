@@ -8,6 +8,7 @@ authors = ["Gary Jarrel <gary@jarrel.com.au>"]
 python = "^3.9"
 Flask = "^1.1.2"
 Flask-Assets = "^2.0"
+python-dotenv = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
