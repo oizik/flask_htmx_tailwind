@@ -3,9 +3,10 @@
 {% block content %}
 <div class="w-2/3 mx-auto py-10 text-gray-600">
     <input type="text" name="search" hx-post="/search" hx-trigger="keyup changed delay:250ms" hx-target="#todo-results"
-        placeholder="search" class="bg-white px-5 pr-10 rounded-full text-2xl focus:outline-none">
+        placeholder="search" class="bg-white px-5 pr-10 rounded-full text-2xl focus:outline-none"
+        hx-indicator=".htmx-indicator">
+    <span class="htmx-indicator">Searching...</span>
 </div>
-<span class="htmx-indicator w-2/3 mx-auto"></span>
 <table class="border-collapse w-2/3 mx-auto">
     <thead>
         <tr>
