@@ -1,0 +1,17 @@
+{% if todos|length>0 %}
+{% for todo in todos %}
+<tr class="bg-white lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-nowrap mb-10 lg:mb-0">
+    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b lg:table-cell relative lg:static">
+        {{todo.id}}</td>
+    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b lg:table-cell relative lg:static">
+        {{todo.title}}</td>
+    <td class="w-full lg:w-auto p-3 text-gray-800 text-center border border-b lg:table-cell relative lg:static">
+        {% if todo.completed %}
+        <span class="rounded py-1 px-3 text-xs font-bold bg-green-400">Yes</span>
+        {% else %}
+        <span class="rounded py-1 px-3 text-xs font-bold bg-red-400">No</span>
+        {% endif %}
+    </td>
+</tr>
+{% endfor %}
+{% endif %}
