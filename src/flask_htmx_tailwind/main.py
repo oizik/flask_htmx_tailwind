@@ -4,13 +4,11 @@ from .todo import todos
 
 main = Blueprint('main', __name__)
 
+
 @main.route("/")
 def homepage():
     return render_template('index.html')
 
-@main.route("/google")
-def google():
-    return render_template('google.html')
 
 @main.route('/search', methods=['POST'])
 def search():
